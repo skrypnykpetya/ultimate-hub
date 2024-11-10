@@ -1,0 +1,12 @@
+[Unit]
+Description=Gunicorn instance to serve myproject
+After=network.target
+
+[Service]
+User=hub
+Group=hub
+WorkingDirectory=/home/hub/ultimate-hub
+ExecStart=/home/hub/ultimate-hub/venv/bin/python /home/hub/ultimate-hub/uvicorn app.main:app --port 8001
+
+[Install]
+WantedBy=multi-user.target
