@@ -153,4 +153,5 @@ vscode
 ./pytest_cache
 
 *.sqlite3
-
+script.py
+/script.py
