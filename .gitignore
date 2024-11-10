@@ -136,7 +136,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-script.py
+
 test.db
 node_modules
 package-lock.json
@@ -153,5 +153,4 @@ vscode
 ./pytest_cache
 
 *.sqlite3
-script.py
-/script.py
+
