@@ -6,7 +6,7 @@ After=network.target
 User=hub
 Group=hub
 WorkingDirectory=/home/hub/ultimate-hub
-ExecStart=/home/hub/ultimate-hub/venv/bin/python /home/hub/ultimate-hub/uvicorn app.main:app --port 8001
+ExecStart=/home/hub/ultimate-hub/venv/bin/uvicorn app.main:app --port 8001
 
 [Install]
 WantedBy=multi-user.target
