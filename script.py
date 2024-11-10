@@ -15,7 +15,7 @@ def setup_webhook():
     logger.debug(f"Body: {body}")
     url = "https://api.monobank.ua/personal/webhook"
     response = requests.post(url, data=body, headers=headers)
-    logger.debug(f"Set up webhook response: {response}")
+    logger.debug(f"Set up webhook response: {response.status_code} {response.json()}")
 
 
 setup_webhook()
